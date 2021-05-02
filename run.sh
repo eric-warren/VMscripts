@@ -8,15 +8,15 @@ fi
 pwd=$(pwd)
 
 echo -e 'if [ -e /etc/.bash_aliases ]; then\n  source /etc/.bash_aliases\nfi' >> /etc/bash.bashrc
+echo -e 'if [ -e /etc/.bash_aliases ]; then\n  source /etc/.bash_aliases\nfi' >> ~/.bashrc
 
-#apt install -y git python3 python3-pip gobuster ncrack binwalk cewl aircrack-ng
-#snap install --classic code
+apt install -y git python3 python3-pip gobuster ncrack binwalk cewl aircrack-ng
+snap install --classic code
 
 cd /opt
-#git clone https://github.com/trustedsec/ptf.git
+git clone https://github.com/trustedsec/ptf.git
 cd /opt/ptf
-#pip3 install -r requirements.txt
-<< "MULTILINE-COMMENT"
+pip3 install -r requirements.txt
 ./ptf <<EOF
 use modules/intelligence-gathering/amass
 run
@@ -113,7 +113,6 @@ run
 use modules/powershell/obfuscation
 run
 EOF
-MULTILINE-COMMENT
 cd $pwd
 cp ./theHarvester.py /pentest/intelligence-gathering/theharvester/theHarvester/lib/core.py
 cp ./AWSBucketDump.py /pentest/intelligence-gathering/awsbucketdump/AWSBucketDump.py
@@ -123,9 +122,9 @@ gem install wpscan
 bundle update --bundler
 
 cd /pentest
-#find . -name "requirements.txt"|while read fname; do
-#  pip3 install -r $fname --ignore-installed
-#done
+find . -name "requirements.txt"|while read fname; do
+  pip3 install -r $fname --ignore-installed
+done
 cp -r /pentest/intelligence-gathering/osrframework/config/* ~/.config/OSRFramework
 cp -r /pentest/intelligence-gathering/osrframework/config/* ~/.config/OSRFramework/default
 echo "alias asm='python3 /pentest/intelligence-gathering/ASM/asm.py'" >> /etc/.bash_aliases
@@ -133,5 +132,7 @@ echo "alias goofile='python3 /pentest/intelligence-gathering/goofile/goofile.py'
 echo "alias onedrive_enum='python3 /pentest/intelligence-gathering/nedrive_user_enum/onedrive_enum.py'" >> /etc/.bash_aliases
 echo "alias kerberoast='python3 /pentest/exploitation/kerberoast/kerberoast.py'" >> /etc/.bash_aliases
 echo "alias responder='python3 /pentest/exploitation/responder/Responder.py'" >> /etc/.bash_aliases
-echo "alias responder='/pentest/exploitation/shellgen/shellgen'" >> /etc/.bash_aliases
+echo "alias shellgen='/pentest/exploitation/shellgen/shellgen'" >> /etc/.bash_aliases
 echo "alias shellter='wine /pentest/av-bypass/shellter/shellter.exe'" >> /etc/.bash_aliases
+echo "alias sudo='sudo '" >> /etc/.bash_aliases
+
