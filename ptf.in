@@ -1,0 +1,131 @@
+use modules/intelligence-gathering/amass
+run
+use modules/intelligence-gathering/awsbucket
+run
+use modules/intelligence-gathering/bfac
+run
+use modules/intelligence-gathering/InSpy
+run
+use modules/intelligence-gathering/asm
+run
+use modules/intelligence-gathering/discover
+run
+use modules/intelligence-gathering/dnsenum
+run
+use modules/intelligence-gathering/dnstwist
+run
+use modules/intelligence-gathering/eyewitness
+run
+use modules/intelligence-gathering/gather_contacts
+run
+use modules/intelligence-gathering/gobuster
+run
+use modules/intelligence-gathering/goofile
+run
+use modules/intelligence-gathering/linux-exploit-suggester
+run
+use modules/intelligence-gathering/linuxprivchecker
+run
+use modules/intelligence-gathering/metagoofil
+run
+use modules/intelligence-gathering/msfenum
+run
+use modules/intelligence-gathering/ntlmrecon
+run
+use modules/intelligence-gathering/onedrive_user_enum
+run
+use modules/intelligence-gathering/osrframework
+run
+use modules/intelligence-gathering/postman
+run
+use modules/intelligence-gathering/smbmap
+run
+use modules/intelligence-gathering/ssh-audit
+run
+use modules/intelligence-gathering/sublist3r
+run
+use modules/intelligence-gathering/theHarvester
+run
+use modules/intelligence-gathering/windows-exploit-suggester
+run
+use modules/vulnerability-analysis/cloudflair
+run
+use use modules/vulnerability-analysis/cmsmap
+run
+use modules/vulnerability-analysis/hydra
+run
+use modules/vulnerability-analysis/nikto
+run
+use modules/vulnerability-analysis/nmap
+run
+use modules/vulnerability-analysis/ncrack
+run
+use modules/vulnerability-analysis/office365userenum
+run
+use modules/vulnerability-analysis/openvas
+run
+use modules/vulnerability-analysis/wpscan
+run
+use modules/exploitation/badkeys
+run
+use modules/exploitation/beef
+run
+use modules/exploitation/burp
+run
+use modules/exploitation/exploit-db
+run
+use modules/exploitation/impacket
+run
+use modules/exploitation/kerbrute
+run
+use modules/exploitation/kerberoast
+run
+use modules/exploitation/metasploit
+run
+use modules/exploitation/mitmproxy
+run
+use modules/exploitation/owasp-zsc
+run
+use modules/exploitation/pwntools
+run
+use modules/exploitation/responder
+run
+use modules/exploitation/setoolkit
+run
+use modules/exploitation/shellgen
+run
+use modules/reversing/binwalk
+run
+use modules/windows-tools/sidestep
+run
+use modules/post-exploitation/armitage
+run
+use modules/post-exploitation/bloodhound
+run
+use modules/post-exploitation/crackmapexec
+run
+use modules/post-exploitation/empire
+run
+use modules/post-exploitation/evilwinrm
+run
+use modules/post-exploitation/powersploit
+run
+use modules/post-exploitation/pykek
+run
+use modules/post-exploitation/pypykatz
+run
+use modules/password-recovery/cewl
+run
+use modules/password-recovery/johntheripper
+run
+use modules/password-recovery/hashcat
+run
+use modules/password-recovery/seclist
+run
+use modules/password-recovery/statistically-likely-usernames
+run
+use modules/av-bypass/shellter
+run
+use modules/powershell/obfuscation
+run
+use modules/wireless/aircrackng
